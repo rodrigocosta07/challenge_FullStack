@@ -1,0 +1,16 @@
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\bin\Debug\netcoreapp2.2\challenge_API.deps.json
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\bin\Debug\netcoreapp2.2\challenge_API.runtimeconfig.json
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\bin\Debug\netcoreapp2.2\challenge_API.runtimeconfig.dev.json
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\bin\Debug\netcoreapp2.2\challenge_API.dll
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\obj\Debug\netcoreapp2.2\challenge_API.csprojAssemblyReference.cache
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\obj\Debug\netcoreapp2.2\challenge_API.RazorAssemblyInfo.cache
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\obj\Debug\netcoreapp2.2\challenge_API.RazorAssemblyInfo.cs
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\obj\Debug\netcoreapp2.2\challenge_API.AssemblyInfoInputs.cache
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\obj\Debug\netcoreapp2.2\challenge_API.AssemblyInfo.cs
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\obj\Debug\netcoreapp2.2\challenge_API.RazorTargetAssemblyInfo.cache
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\bin\Debug\netcoreapp2.2\challenge_API.pdb
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\obj\Debug\netcoreapp2.2\challenge_API.dll
+C:\Users\rodri\Documents\challenge_FullStack\API\challenge_API\challenge_API\obj\Debug\netcoreapp2.2\challenge_API.pdb
