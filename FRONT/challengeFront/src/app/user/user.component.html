@@ -1,0 +1,34 @@
+<mat-toolbar>Sotero Tech Challenge FullStack</mat-toolbar>
+<div>
+  <form class="example-form" [formGroup]="formUser">
+    <mat-form-field class="example-full-width">
+      <input type="text" required maxlength="30" matInput placeholder="First Name" formControlName="FirstName">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input type="text" required maxlength="30" matInput placeholder="Last Name" formControlName="LastName" />
+    </mat-form-field>
+
+
+    <mat-form-field class="example-full-width">
+      <input type="number" required matInput placeholder="Participation" formControlName="Participation" />
+    </mat-form-field>
+
+    <button (click)="save()" type="submit" mat-raised-button color="primary">SEND</button>
+  </form>
+
+
+  <table class="table">
+    <tr ngclass="btn-primary">
+      <th class="tbl2">FirstName</th>
+      <th class="tbl2">LastName</th>
+      <th class="tbl2">Participation</th>
+      
+    </tr>
+    <tr *ngFor="let user of allUsers | async">
+      <td class="tbl2">{{user.FirstName}}</td>
+      <td class="tbl2">{{user.LastName}}</td>
+      <td class="tbl2">{{user.Participation}}</td>
+    </tr>
+  </table>
+</div>

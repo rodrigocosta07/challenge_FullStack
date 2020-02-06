@@ -11,7 +11,7 @@ namespace challenge_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : Controller
+    public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
         public UsersController(IUserService userService)
@@ -21,16 +21,33 @@ namespace challenge_API.Controllers
 
 
         [HttpGet]
-        public async Task<IEnumerable<User>> GetUsers()
+        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
-            var users = await _userService.ListAsync();
-            return users;
+            try
+            {
+                var users = await _userService.ListAsync();
+                return Ok(users);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest();
+            }
+            
         }
 
         [HttpPost]
-        public async Task AddUsers(User user)
+        public async Task<ActionResult> AddUsers(User user)
         {
-            await _userService.AddAsync(user);
+            try
+            {
+                await _userService.AddAsync(user);
+                return Ok();
+            }
+            catch
+            {
+                return BadRequest();
+            }
+            
         }
     }
 }
