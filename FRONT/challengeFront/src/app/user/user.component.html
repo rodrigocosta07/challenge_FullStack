@@ -25,10 +25,10 @@
       <th class="tbl2">Participation</th>
       
     </tr>
-    <tr *ngFor="let user of allUsers | async">
-      <td class="tbl2">{{user.FirstName}}</td>
-      <td class="tbl2">{{user.LastName}}</td>
-      <td class="tbl2">{{user.Participation}}</td>
+    <tr *ngFor="let user of allUsers">
+      <td class="tbl2">{{user.firstName}}</td>
+      <td class="tbl2">{{user.lastName}}</td>
+      <td class="tbl2">{{user.participation}}</td>
     </tr>
   </table>
 </div>

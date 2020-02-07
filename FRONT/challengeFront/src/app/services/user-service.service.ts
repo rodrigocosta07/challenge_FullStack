@@ -10,12 +10,19 @@ const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/js
 })
 export class UserServiceService {
   constructor(private http: HttpClient) { }
-
-  getAllUsers(): Observable<User[]> {
-    return this.http.get<User[]>(environment.API);
-  }
   createUser(user: User): Observable<User> {
     return this.http.post<User>(environment.API, user, httpOptions);
   }
-
+  getAllUsers() {
+    return new Promise((resolve, reject) => {
+        this.http.get<User[]>(environment.API).subscribe(
+          (result: any) => {
+            resolve(result);
+          },
+          error => {
+            reject(error);
+          }
+        );
+      });
+  }
 }

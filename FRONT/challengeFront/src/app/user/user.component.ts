@@ -11,7 +11,7 @@ import { User } from '../models/user';
 })
 export class UserComponent implements OnInit {
   formUser: FormGroup;
-  allUsers: Observable<User[]>;
+  allUsers: User[];
   constructor(private fb: FormBuilder, private userService: UserServiceService) { }
 
   ngOnInit() {
@@ -31,12 +31,16 @@ export class UserComponent implements OnInit {
     const user = this.formUser.value;
     this.userService.createUser(user).subscribe(
       () => {
+        this.formUser.reset();
         this.loadAllUsers();
       }
     );
   }
 
-  loadAllUsers() {
-    this.allUsers = this.userService.getAllUsers();
+  async loadAllUsers() {
+    this.userService.getAllUsers().then((res: User[]) => {
+      this.allUsers = res;
+      console.log(this.allUsers);
+    });
   }
 }
